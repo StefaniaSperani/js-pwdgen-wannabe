@@ -13,12 +13,12 @@ const userSurname = prompt("Quale è il tuo congnome?");
 const userColor = prompt('Quale è il tuo colore preferito?');
 const userAge = prompt('Quanti anni hai?');
 const presentation = `
-    <div>Ciao</div>
+    <div class="myred">Ciao</div>
     <span class="mywhite"> ${userName} </span>
     ${userSurname} 
-    <span class="mywhite"> ${userColor} </span>
+    <span class="mywhite"> ${userColor}</span>
     ${userAge}
-    <span class="mywhite"> ! </span>
+    <span class="myred"> ! </span>
 
 `;
 
