@@ -1,7 +1,7 @@
 /* common */
 
 body{
-    background-color: rgb(48, 23, 23);
+    background-color: rgb(92, 12, 12);
     color: rgb(214, 158, 52);
 }
 
@@ -11,4 +11,8 @@ body{
 
 .myred{
     color: red;
+}
+
+#user{
+    text-shadow: 5px 5px 5px black;
 }
