@@ -6,16 +6,31 @@ Infine scrivi sulla pagina nomecognomecolorepreferito21
 (dove il 21 è in questo caso l'età) */
 
 
+// CREO LE DOMANDE DA PORRE ALL'UTENTE
 
 const userName = prompt('Come ti chiami?');
 const userSurname = prompt("Quale è il tuo congnome?");
 const userColor = prompt('Quale è il tuo colore preferito?');
 const userAge = prompt('Quanti anni hai?');
 const presentation = `
-    ${userName} ${userSurname} ${userColor} ${userAge} 
+    <div>Ciao</div>
+    <span class="mywhite"> ${userName} </span>
+    ${userSurname} 
+    <span class="mywhite"> ${userColor} </span>
+    ${userAge}
+    <span class="mywhite"> ! </span>
+
 `;
 
+
+// ULTIMO CHECK NELLA CONSOLE PER VEDERE SE REGISTRA TUTTO (LO LASCIO COSI POSSO VEDERLO)
+
+console.log(userName + userSurname + userColor + userAge);
+
+
+// ORA DICO CHE OGNI COSA INSERITA DALL'UTENTE VENGA VISUALIZZATO NELL'HTML (COME SE FOSSE UNA PRESENTAZIONE)
 
 const element = document.getElementById('user');
 
 element.innerHTML = presentation;
+
